@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to top right, #7b919c, #a8c7d8);
+    
+}
+
+.headTitle, .listMenu, .mainContent {
+    display: flex;
+}
+
+.headTitle {
+    justify-content: space-between;
+}
+
+.divMenu {
+    padding: 2.5rem 1.5rem;
+}
+
+.listMenu {
+    font-family: 'Stalinist One', cursive;
+    gap: 2.5rem;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.mainContent {
+    font-family: 'Roboto', sans-serif;
+}
+
