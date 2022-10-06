@@ -4,31 +4,124 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: #6d7b7e;
+    transition: color .3s linear, text-shadow .3s linear;
+}
+
+a:hover {
+    text-shadow: 0 0 10px #02d1ff;
+    color: #ececec;
+}
+
 body {
-    background: linear-gradient(to top right, #7b919c, #a8c7d8);
-    
+    background-color: #afbcbe;
+    overflow: hidden;
 }
 
-.headTitle, .listMenu, .mainContent {
+#headTitle {
     display: flex;
-}
-
-.headTitle {
+    align-items: center;
     justify-content: space-between;
+    padding: .2rem 2rem;
 }
 
-.divMenu {
-    padding: 2.5rem 1.5rem;
+.divLogo a img {
+    filter: drop-shadow(5px 5px 1px black);
 }
 
-.listMenu {
-    font-family: 'Stalinist One', cursive;
-    gap: 2.5rem;
-    justify-content: space-evenly;
-    list-style: none;
+.divMenu .listMenu {
+    display: flex;
+    gap: 5rem;
+    list-style-type: none;
+    font-family: 'Aileron', sans-serif;
+    justify-content: flex-start;
+    font-size: 26px;
 }
 
-.mainContent {
-    font-family: 'Roboto', sans-serif;
+#content {
+    display: grid;
+    grid-template-columns: 50vw auto auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #83a6ac23;
+    margin: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #52696d80;
 }
 
+h1, h4, p {
+    font-family: 'Aileron', sans-serif;
+    color: #d8d7d7;
+}
+
+h1 {
+    text-indent: 2rem;
+}
+
+h4 {
+    text-indent: 3rem;
+}
+
+p {
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.paragraphContent {
+    padding: .1rem;
+    text-indent: 1rem;
+}
+
+button {
+    padding: .5rem 2rem;
+    margin: 1rem 1rem;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background-color: #111414;
+    color: #d8d7d7;
+    cursor: pointer;
+    transition: background-color .3s linear;
+}
+
+button:hover {
+    background-color: #d8d7d7;
+    color: #111414;;
+}
+
+.divSectionContent {
+    background-color: #34494d;
+    padding: 1rem;
+    text-align: justify;
+    border-radius: 15px;
+}
+
+.imgsSelect, .divSectionContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: .3rem;
+}
+
+.imgContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgsSelect img {
+    width: 7vw;
+    background: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.imgContent img {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #34494d;
+}
