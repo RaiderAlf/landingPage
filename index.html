@@ -7,13 +7,20 @@
     <title>Estelar Ve</title>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="resources/styles.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/dtn7zqi.css">
 </head>
 <body>
     <header id="headTitle">
         <div class="divLogo">
             <a href="#">
                 <img src="img/EstelarVe.svg" alt="EstelarVe Logo" width="100px">
+                <hgroup>
+                    <h1 class="contentTitle">
+                        Estelar Ve
+                    </h1>
+                    <h4 class="contentSubTitle">
+                        From the Stars to your Hands
+                    </h4>
+                </hgroup>
             </a>
         </div>
         <div class="divMenu">
@@ -30,12 +37,6 @@
     <main id="content">
         <section class="sectionContent">
             <div class="divSectionContent">
-                <h1 class="contentTitle">
-                    Estelar Ve
-                </h1>
-                <h4 class="contentSubTitle">
-                    From the Stars to your Hands
-                </h4>
                 <p class="paragraphContent">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis numquam illum minima, voluptatum autem iusto provident optio. Soluta magnam dolores tempora perferendis porro facilis ab molestiae perspiciatis recusandae obcaecati, harum beatae alias, neque distinctio in dolore vero consectetur ut rerum.
                 </p>
@@ -56,11 +57,12 @@
         </figure>
         <aside id="imgDiv">
             <div class="imgsSelect">
-                <img src="img/pre2@0.5x.png" alt="pic" class="preViewImages">
-                <img src="img/pre3@0.5x.png" alt="pic" class="preViewImages">
-                <img src="img/pre1@0.5x.png" alt="pic" class="preViewImages">
+                <img src="img/pre2@0.5x.png" onclick="srcChange('img/pre2@0.5x.png');" alt="pic" class="preViewImages">
+                <img src="img/pre3@0.5x.png" onclick="srcChange('img/pre3@0.5x.png');" alt="pic" class="preViewImages">
+                <img src="img/pre1@0.5x.png" onclick="srcChange('img/pre1@0.5x.png');" alt="pic" class="preViewImages">
             </div>
         </aside>
     </main>
+    <script src="resources/script.js"></script>
 </body>
 </html>

@@ -27,6 +27,11 @@ body {
     padding: .2rem 2rem;
 }
 
+.divLogo a {
+    display: flex;
+    align-items: center;
+}
+
 .divLogo a img {
     filter: drop-shadow(5px 5px 1px black);
 }
@@ -53,16 +58,21 @@ body {
 }
 
 h1, h4, p {
-    font-family: 'Aileron', sans-serif;
+    font-family: sans-serif;
     color: #d8d7d7;
 }
 
 h1 {
+    font-family: 'Ailerons';
+    font-size: 2.5rem;
     text-indent: 2rem;
+    color: #353a3b;
 }
 
 h4 {
-    text-indent: 3rem;
+    font-family: 'Ailerons';
+    text-indent: 1.8rem;
+    color: #444e50;
 }
 
 p {
@@ -92,8 +102,8 @@ button:hover {
 }
 
 .divSectionContent {
-    background-color: #34494d;
-    padding: 1rem;
+    background-color: #34494dd3;
+    padding: 1.3rem;
     text-align: justify;
     border-radius: 15px;
 }
@@ -103,7 +113,7 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: .3rem;
+    gap: .2rem;
 }
 
 .imgContent {
@@ -114,10 +124,16 @@ button:hover {
 }
 
 .imgsSelect img {
-    width: 7vw;
+    width: 8vw;
     background: white;
     border-radius: 5px;
     cursor: pointer;
+    transition: transform .2s linear;
+}
+
+.imgsSelect img:hover {
+    transform: scale(1.1);
+    border: 1px dashed #34494d;
 }
 
 .imgContent img {
